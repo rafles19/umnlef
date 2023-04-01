@@ -12,6 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Jam"
         tools:targetApi="31">
+
+        <activity android:name=".GameDashboard"/>
         <activity
             android:name=".MainActivity"
             android:exported="true">
