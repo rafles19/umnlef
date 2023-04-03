@@ -1,5 +1,6 @@
 package id.ac.umn.jam
 
+import android.graphics.Color
 import android.os.Handler
 import android.os.Looper
 import android.widget.TextView
@@ -26,6 +27,7 @@ class WaktuGame(private val clock: TextView) {
                     in 6..11 -> "pagi"
                     in 12..17 -> "siang"
                     else -> "malam"
+
                 }
 
                 // format jam dan suasana ke dalam teks
@@ -39,6 +41,10 @@ class WaktuGame(private val clock: TextView) {
                 handler.postDelayed(this, 1000) //  update setiap 1 detik
             }
         })
+    }
+    fun addTime(){
+        //3600 = 1 jam jadi dia langsung skip time 1 jam
+        currentTime.add(Calendar.SECOND, 7200)
     }
 
     fun stop() {
