@@ -38,7 +38,7 @@ class GameDashboard : AppCompatActivity() {
             clock.addTime()
             startProgressBar(progressBar1)
         }
-
+//
     }
     private fun startProgressBar(progressBar: ProgressBar) {
         progressBar.progress = 0
